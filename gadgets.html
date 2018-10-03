@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Trivia Champ</title>
+    <link rel="stylesheet" type="text/css" href="./project.css">
+</head>
+
+<body onload="GetFromApiGadg(); myMove(); myMove1()">
+    <header>
+        <div class="title-bar">
+            <div class="title">
+                <h1><a href="./home.html">Trivia Champ</a></h1>
+            </div>
+            <div class="post-word-div"></div>
+        </div>
+        <div id="nav-bar1">
+            <div class="nav-bar1"><a href="./categories.html">Categories</a></div>
+            <div class="nav-bar1"><a href="./about.html">About</a></div>
+        </div>
+    </header>
+    <div>
+        <div><a href="./random.html"><img onclick="openNav()" src="C:\Programs\HTML\ProjectA\UI_Glyph_07-07-512.png" alt="Random"></a></div>
+        <div class="main-view">
+            <div id="diff"></div>
+            <div id="question" class="quest"></div>
+            <div id="reveal0" onclick="revealGadg(); fade(); fade1()">Click to reveal answer!</div>
+            <div id="options">
+                <div id="0" class="options"></div>
+                <div id="1" class="options"></div>
+                <div id="2" class="options"></div>
+                <div id="3" class="options"></div>
+            </div>
+            <div id="reveal"></div>
+            <div id="buttrow">
+                <div id="new-question"><a class="next" onclick="GetFromApiGadg(); myMove(); myMove1()" href="">New Question</a></div>
+            </div>
+        </div>
+    </div>
+    <script src="./project.js"></script>
+</body>
+
+</html>
